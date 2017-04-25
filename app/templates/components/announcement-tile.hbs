@@ -1,5 +1,5 @@
 <li>
-  {{#each model as |announcement|}}
+  {{#each announcement as |announcement|}}
    {{announcement.messageType}}: {{announcement.message}}
    <button {{action 'delete' announcement}}>Delete Announcement</button>
    {{/each}}

@@ -1,20 +1,17 @@
 <h1>Announcements</h1>
 
-Here are the current announcements:
+Here are the current announcements test:
 <ul>
-  {{#each model as |announcement|}}
-     <li>{{announcement.messageType}}: {{announcement.message}}</li>
-  {{/each}}
+  {{#each model.announcements as |announcement|}}
+   {{announcement.messageType}}: {{announcement.message}}
+   <button {{action 'delete' announcement}}>Delete Announcement</button>
+   {{/each}}
 </ul>
-
-{{new-announcement saveAnnouncement="saveAnnouncement"}}
+<!-- this breaks the page {{new-announcement saveAnnouncement2="saveAnnouncement3"}} -->
 <br>
-{{new-announcement}}
-
-
 <hr>
 {{#link-to 'index'}}Home{{/link-to}}
 <br>
-{{#link-to 'announcement' announcement=model}}Announcements{{/link-to}} <!-- we need to have the announcement data here-->
+{{#link-to 'about'}}About{{/link-to}}
 <br>
 {{#link-to 'contact'}}Contact Us{{/link-to}}

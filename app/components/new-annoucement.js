@@ -7,13 +7,13 @@ export default Ember.Component.extend({
       this.set('addNewAnnouncement', true);
     },
 
-    saveAnnouncement() {
+    saveAnnouncement1() {
       var params = {
         messageType: this.get('messageType'),
         message: this.get('message')
       };
       this.set('addNewAnnouncement', false);
-      this.sendAction('saveAnnouncement', params);
+      this.sendAction('saveAnnouncement2', params);
     }
   }
 });
