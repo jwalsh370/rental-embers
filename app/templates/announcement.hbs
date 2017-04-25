@@ -1,5 +1,16 @@
 <h1>Announcements</h1>
 
+Here are the current announcements:
+<ul>
+  {{#each model as |announcement|}}
+     <li>{{announcement.type}}: {{announcement.message}}</li>
+  {{/each}}
+</ul>
+
+{{new-announcement saveAnnouncement="saveAnnouncement"}}
+<br>
+{{new-announcement}}
+
 
 <hr>
 {{#link-to 'index'}}Home{{/link-to}}
