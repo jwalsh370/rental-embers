@@ -1,8 +1,8 @@
 { "announcements": [{
-    "message-type": "weather warning",
+    "messageType": "weather warning",
     "message": "Winter storm watch, winds expected up to seventy miles per hour."
   }, {
-    "message-type": "news",
+    "messageType": "news",
     "message": "Rabid alligators in the sewers, use caution when entering."
   }]
 }
