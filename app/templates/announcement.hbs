@@ -3,7 +3,7 @@
 Here are the current announcements:
 <ul>
   {{#each model as |announcement|}}
-     <li>{{announcement.type}}: {{announcement.message}}</li>
+     <li>{{announcement.messageType}}: {{announcement.message}}</li>
   {{/each}}
 </ul>
 
@@ -15,6 +15,6 @@ Here are the current announcements:
 <hr>
 {{#link-to 'index'}}Home{{/link-to}}
 <br>
-{{#link-to 'about'}}About{{/link-to}}
+{{#link-to 'announcement'}}Announcements{{/link-to}}
 <br>
 {{#link-to 'contact'}}Contact Us{{/link-to}}
