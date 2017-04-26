@@ -10,3 +10,17 @@ We hope you find exactly what you're looking for in a place to stay.
 
 <hr>
 {{new-rental saveRental2="saveRental3"}}
+
+<hr>
+<h2> All Reviews </h2>
+
+<ul>
+  {{#each model.reviews as |review|}}
+    <li>Rating: {{review.rating}}<br>
+        Review: {{review.content}}<br>
+        Reviewer: {{review.author}}
+    </li>
+  {{/each}}
+</ul>
+
+<hr>
