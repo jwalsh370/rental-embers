@@ -1,14 +1,5 @@
+
 <h2>More information about {{model.owner}}'s {{model.type}}</h2>
 
 {{rental-detail rental=model}}
-this update button is in templates/rental.hbs {{update-rental rental=model update="update"}}
-{{rental-detail rental=model destroyRental="destroyRental"}}
-
-<hr>
-{{#link-to 'index'}}Home{{/link-to}}
-<br>
-{{#link-to 'announcement'}}Announcements{{/link-to}}
-<br>
-{{#link-to 'about'}}About{{/link-to}}
-<br>
-{{#link-to 'contact'}}Contact Us{{/link-to}}
+{{update-rental rental=model update="update"}}
